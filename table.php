@@ -1,19 +1,5 @@
 <?
-function drawTable($cols = 10, $rows = 10, $thColor = "#fff", $tdBg = "gray"  ){
-	echo "<table border='1'>";
-	for ( $tr = 1; $tr <= $rows; $tr ++ ) {
-		echo "<tr>\n";
-		for ( $td = 1; $td <= $cols; $td ++ ) {
-			if ( $tr == 1 || $td == 1 ) {
-				echo "\t<th style='text-align: center; color: $thColor ; background: $tdBg ;'>" . $tr * $td . "</th>\n";
-			} else {
-				echo "\t<td style='text-align: center;'>" . $tr * $td . "</td>\n";
-			}
-		}
-		echo "</tr>\n";
-	}
-	echo "</table>";
-}
+ require_once "include/libs.php";
 ?>
 
 <!DOCTYPE html>
